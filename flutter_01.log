@@ -1,0 +1,74 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+FormatException: FormatException: Bad UTF-8 encoding 0x3f (at offset 7)
+
+```
+#0      _Utf8Decoder.convert (dart:convert/utf.dart:484:15)
+#1      _Utf8ConversionSink.addSlice (dart:convert/string_conversion.dart:345:14)
+#2      _Utf8ConversionSink.add (dart:convert/string_conversion.dart:341:5)
+#3      _ConverterStreamEventSink.add (dart:convert/chunked_conversion.dart:86:18)
+#4      _SinkTransformerStreamSubscription._handleData (dart:async/stream_transformers.dart:120:24)
+#5      _rootRunUnary (dart:async/zone.dart:1132:38)
+#6      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#7      _CustomZone.runUnaryGuarded (dart:async/zone.dart:931:7)
+#8      _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:336:11)
+#9      _BufferingStreamSubscription._add (dart:async/stream_impl.dart:263:7)
+#10     _SyncStreamController._sendData (dart:async/stream_controller.dart:763:19)
+#11     _StreamController._add (dart:async/stream_controller.dart:639:7)
+#12     _StreamController.add (dart:async/stream_controller.dart:585:5)
+#13     _Socket._onData (dart:io/runtime/binsocket_patch.dart:1714:41)
+#14     _rootRunUnary (dart:async/zone.dart:1136:13)
+#15     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#16     _CustomZone.runUnaryGuarded (dart:async/zone.dart:931:7)
+#17     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:336:11)
+#18     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:263:7)
+#19     _SyncStreamController._sendData (dart:async/stream_controller.dart:763:19)
+#20     _StreamController._add (dart:async/stream_controller.dart:639:7)
+#21     _StreamController.add (dart:async/stream_controller.dart:585:5)
+#22     new _RawSocket.<anonymous closure> (dart:io/runtime/binsocket_patch.dart:1276:33)
+#23     _NativeSocket.issueReadEvent.issue (dart:io/runtime/binsocket_patch.dart:819:14)
+#24     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#25     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#26     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#27     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.8.2, on Microsoft Windows [Version 10.0.14393], locale en-US)
+    • Flutter version 0.8.2 at F:\education1\Flutter_SDK\flutter
+    • Framework revision 5ab9e70727 (5 weeks ago), 2018-09-07 12:33:05 -0700
+    • Engine revision 58a1894a1c
+    • Dart version 2.1.0-dev.3.1.flutter-760a9690c2
+
+[!] Android toolchain - develop for Android devices (Android SDK 27.0.3)
+    • Android SDK at F:\education1\Android_SDK\sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-27, build-tools 27.0.3
+    • ANDROID_HOME = F:\education1\Android_SDK\sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_112-release-b06)
+    ✗ Android license status unknown.
+
+[✓] Android Studio (version 2.3)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_112-release-b06)
+
+[✓] VS Code (version 1.28.1)
+    • VS Code at C:\Users\M amir M\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 2.19.0
+
+[✓] Connected devices (1 available)
+    • Google Nexus 5X, 7 1 0, API 25, 1080x1920 • 192.168.43.101:5555 • android-x86 • Android 7.1.1 (API 25)
+
+! Doctor found issues in 1 category.
+```

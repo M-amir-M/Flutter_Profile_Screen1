@@ -191,9 +191,9 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                 Container(
                   child: Center(
                     child: Container(
-                      height: 90.0,
-                      width: 90.0,
-                      padding: EdgeInsets.all(10.0),
+                      height: 70.0,
+                      width: 70.0,
+                      padding: EdgeInsets.all(5.0),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(100.0)),
@@ -205,7 +205,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                   ),
                 ),
                 SizedBox(
-                  height: 5.0,
+                  height: 1.0,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 35.0),
@@ -234,11 +234,11 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                               'نازنین زهرا محمدی',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18.0,
+                                fontSize: 16.0,
                               ),
                             ),
                             SizedBox(
-                              height: 10.0,
+                              height: 1.0,
                             ),
                             Container(
                               padding: EdgeInsets.symmetric(
@@ -277,7 +277,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                   ),
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 1.0,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 40.0),
@@ -326,7 +326,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                   ),
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 1.0,
                 ),
                 GridView.count(
                   crossAxisCount: 2,
@@ -341,7 +341,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                   ],
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 1.0,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 25.0),
@@ -416,7 +416,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                   Text(
                     title,
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 17.0,
                     ),
                   ),
                   Icon(icon)
@@ -434,7 +434,7 @@ class AppState extends State<App> with SingleTickerProviderStateMixin {
                     child: Center(
                       child: Text(
                         value,
-                        style: TextStyle(fontSize: 25.0, color: redColor),
+                        style: TextStyle(fontSize: 20.0, color: redColor),
                       ),
                     )))
           ],
